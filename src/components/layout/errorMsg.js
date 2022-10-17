@@ -7,7 +7,7 @@ const  ErrorMsg = ({error}) => {
           data-testid="errorMsg"
           style={errorStyle}
         >
-          Error! {error.graphQLErrors[0].message}
+          Error! {error}
         </h3>
     </>
   );

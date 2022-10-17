@@ -19,7 +19,7 @@ export default function Topics(){
   return(
     <>
       {loading && <LoadingSpin />}
-      {error && <ErrorMsg error={error} />}
+      {error && <ErrorMsg error={error.graphQLErrors[0].message} />}
       {data &&  (
         <div style={stylesTopicsSection}>
           <SearchTextField defaultValue={topic} handleSearch={handleSearch} />
